@@ -1,4 +1,8 @@
+package phaseten;
 import java.util.Stack;
+
+import phaseten.exceptions.DiscardPileEmptyException;
+
 import java.util.Collections;
 
 public class Deck {
@@ -49,15 +53,15 @@ public class Deck {
 
     private void buildDeck() {
         this.deck = new Stack<Card>();
-        for (Suit suit : Suit.values()) {
-            if (suit != Suit.WILD)
+        for (Color color : Color.values()) {
+            if (color != Color.WILD)
                 for (Rank rank : Rank.values())
                     if (rank != Rank.SKIP && rank != Rank.WILD)
                         for (int i = 0; i < NUM_DUP_NORMAL; i++)
-                            this.deck.push(new Card(rank, suit));
+                            this.deck.push(new Card(rank, color));
             else {
-                for (int i = 0; i < NUM_SKIP; i++) deck.push(new Card(Rank.SKIP, suit));
-                for (int i = 0; i < NUM_WILD; i++) deck.push(new Card(Rank.WILD, suit));
+                for (int i = 0; i < NUM_SKIP; i++) deck.push(new Card(Rank.SKIP, color));
+                for (int i = 0; i < NUM_WILD; i++) deck.push(new Card(Rank.WILD, color));
             }
             
         }

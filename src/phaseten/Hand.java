@@ -1,3 +1,5 @@
+package phaseten;
+
 import java.util.ArrayList;
 
 public class Hand {
