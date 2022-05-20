@@ -1,4 +1,6 @@
-public class DiscardPileEmptyException extends Exception {
+package phaseten.exceptions;
+
+public class DiscardPileEmptyException extends PhaseTenException {
     private static final long serialVersionUID = 1L;
 
     public DiscardPileEmptyException(String message) {

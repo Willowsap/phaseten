@@ -1,4 +1,8 @@
+package phaseten;
+
 import java.util.ArrayList;
+
+import phaseten.exceptions.IllegalPhaseException;
 
 public class PhaseOne extends Phase {
 

@@ -1,3 +1,5 @@
+package phaseten;
+
 public class GameState {
     public static final int NUM_STARTING_CARDS = 10;
 

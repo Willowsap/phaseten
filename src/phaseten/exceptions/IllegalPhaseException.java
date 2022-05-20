@@ -1,4 +1,6 @@
-public class IllegalPhaseException extends Exception {
+package phaseten.exceptions;
+
+public class IllegalPhaseException extends PhaseTenException {
     private static final long serialVersionUID = 1L;
 
     public IllegalPhaseException(String message) {
