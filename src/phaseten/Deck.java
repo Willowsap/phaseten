@@ -54,7 +54,7 @@ public class Deck {
     private void buildDeck() {
         this.deck = new Stack<Card>();
         for (Color color : Color.values()) {
-            if (color != Color.WILD)
+            if (color != Color.BLACK)
                 for (Rank rank : Rank.values())
                     if (rank != Rank.SKIP && rank != Rank.WILD)
                         for (int i = 0; i < NUM_DUP_NORMAL; i++)
