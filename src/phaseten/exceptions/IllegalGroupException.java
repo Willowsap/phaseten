@@ -1,6 +1,6 @@
 package phaseten.exceptions;
 /**
- * IllegalPhaseException.java
+ * IllegalGroupException.java
  */
 
  /**
@@ -10,18 +10,18 @@ package phaseten.exceptions;
   * @author Willow Sapphire
   * @version 05/31/2022
   */
-public class IllegalPhaseException extends PhaseTenException {
+public class IllegalGroupException extends PhaseTenException {
     private static final long serialVersionUID = 1L;
 
-    public IllegalPhaseException(String message) {
+    public IllegalGroupException(String message) {
         super(message);
     }
     
-    public IllegalPhaseException(String message, Throwable cause) {
+    public IllegalGroupException(String message, Throwable cause) {
         super(message, cause);
     }
     
-    public IllegalPhaseException(Throwable cause) {
+    public IllegalGroupException(Throwable cause) {
         super(cause);
     }
 }
